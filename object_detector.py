@@ -1,6 +1,5 @@
 from ultralytics import YOLO
 from flask import request, Response, Flask
-from waitress import serve
 from PIL import Image
 import json
 
