@@ -2,8 +2,10 @@ from ultralytics import YOLO
 from flask import request, Response, Flask
 from PIL import Image
 import json
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def root():
